@@ -27,3 +27,4 @@
 *.exe
 *.out
 *.app
+/RBT/RBT.VC.VC.opendb
