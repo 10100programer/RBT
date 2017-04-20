@@ -221,6 +221,8 @@ void  binaryTreeType<elemType>::copyTree
         copiedTreeRoot->info = otherTreeRoot->info;
         copyTree(copiedTreeRoot->lLink, otherTreeRoot->lLink);
         copyTree(copiedTreeRoot->rLink, otherTreeRoot->rLink);
+		copyTree(copiedTreeRoot->pLink, otherTreeRoot->pLink);
+		copyTree(copiedTreeRoot->color, otherTreeRoot->color);
     }
 } //end copyTree
 

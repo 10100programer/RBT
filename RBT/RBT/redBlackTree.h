@@ -102,6 +102,7 @@ void rBlackTreeType<elemType>::insert
     newNode->info = insertItem;
     newNode->lLink = NULL;
     newNode->rLink = NULL;
+	newNode->pLink = NULL;
 
     if (root == NULL)
         root = newNode;
@@ -125,7 +126,7 @@ void rBlackTreeType<elemType>::insert
             else
                 current = current->rLink;
         }//end while
-
+		newNode->pLink = trailCurrent;//link to trail current or parrent
         if (trailCurrent->info > insertItem)
             trailCurrent->lLink = newNode;
         else
