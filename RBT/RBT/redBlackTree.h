@@ -32,9 +32,9 @@ public:
       //               If the binary tree is empty or deleteItem
       //               is not in the binary tree, an appropriate
       //               message is printed.
-	void rotateLeft();
+	void rotateLeft(const elemType& rotateitem);
 
-	void rotateRight();
+	void rotateRight(const elemType& rotateitem);
 	/*	
 	nodeType<elemType>	*pLink;//parrent link
 	nodeType<bool>		*color;
@@ -50,7 +50,18 @@ private:
 };
 
 template <class elemType>
+void rBlackTreeType<elemType>::rotateLeft
+					(const elemType& rotateitem)
+{
 
+}
+
+template <class elemType>
+void rBlackTreeType<elemType>::rotateRight
+					(const elemType& rotateitem)
+{
+
+}
 
 template <class elemType>
 bool rBlackTreeType<elemType>::search
