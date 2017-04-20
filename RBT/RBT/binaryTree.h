@@ -11,8 +11,10 @@ template <class elemType>
 struct nodeType
 {
     elemType info;
-    nodeType<elemType> *lLink;
-    nodeType<elemType> *rLink;
+    nodeType<elemType>	*lLink;
+    nodeType<elemType>	*rLink;
+	nodeType<elemType>	*pLink;//parrent link
+	nodeType<bool>		*color;
 };
 	
     //Definition of the class

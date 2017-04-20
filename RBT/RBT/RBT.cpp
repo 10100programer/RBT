@@ -36,7 +36,7 @@ void mainmenu()
 	if (selection == 2)
 	{
 		cin.ignore();
-		RBT;
+		RBT();
 	}
 	else
 	{
@@ -48,7 +48,8 @@ void mainmenu()
 }
 void RBT()
 {
-	
+	rBlackTreeType <int> tree;
+
 }
 void BST() 
 {

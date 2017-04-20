@@ -32,6 +32,11 @@ public:
       //               If the binary tree is empty or deleteItem
       //               is not in the binary tree, an appropriate
       //               message is printed.
+	void rotateLeft();
+
+	void rotateRight();
+
+
 
 private:
     void deleteFromTree(nodeType<elemType>* &p);
@@ -74,7 +79,7 @@ void rBlackTreeType<elemType>::insert
                  (const elemType& insertItem)
 {
     nodeType<elemType> *current; //pointer to traverse the tree
-    nodeType<elemType> *trailCurrent; //pointer behind current
+    nodeType<elemType> *trailCurrent = nullptr; //pointer behind current
     nodeType<elemType> *newNode;  //pointer to create the node
 
     newNode = new nodeType<elemType>;
