@@ -35,7 +35,10 @@ public:
 	void rotateLeft();
 
 	void rotateRight();
-
+	/*	
+	nodeType<elemType>	*pLink;//parrent link
+	nodeType<bool>		*color;
+	*/
 
 
 private:
@@ -45,6 +48,8 @@ private:
       //Postcondition: The node to which p points is deleted
       //               from the red-black tree.
 };
+
+template <class elemType>
 
 
 template <class elemType>
