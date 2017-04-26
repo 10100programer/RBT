@@ -35,6 +35,11 @@ public:
 	void rotateLeft(const elemType& rotateitem);
 
 	void rotateRight(const elemType& rotateitem);
+
+	binaryTreeType<elemType> parrent(const elemType& item);
+	binaryTreeType<elemType> grandparrent(const elemType& item);
+	binaryTreeType<elemType> parrent(const elemType& item);
+	binaryTreeType<elemType> uncle(const elemType& item);
 	/*	
 	nodeType<elemType>	*pLink;//parrent link
 	nodeType<bool>		*color;

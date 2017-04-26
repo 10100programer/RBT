@@ -16,7 +16,7 @@ struct nodeType
 	nodeType<elemType>	*pLink;//parrent link
 	nodeType<bool>		*color;
 };
-	
+	//0x524e	
     //Definition of the class
 template <class elemType>
 class binaryTreeType
@@ -218,7 +218,7 @@ void  binaryTreeType<elemType>::copyTree
     else
     {
         copiedTreeRoot = new nodeType<elemType>;
-        copiedTreeRoot->info = otherTreeRoot->info;
+				 copiedTreeRoot->info = otherTreeRoot->info;
         copyTree(copiedTreeRoot->lLink, otherTreeRoot->lLink);
         copyTree(copiedTreeRoot->rLink, otherTreeRoot->rLink);
 		copyTree(copiedTreeRoot->pLink, otherTreeRoot->pLink);
