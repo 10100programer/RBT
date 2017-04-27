@@ -31,7 +31,7 @@ public:
 	//               If the binary tree is empty or deleteItem
 	//               is not in the binary tree, an appropriate
 	//               message is printed.
-
+	void interactive_Debug();
 private:
 	void deleteFromTree(nodeType<elemType>* &p);
 	
@@ -40,7 +40,7 @@ private:
 	//deleted from the red-black tree.
 	//Postcondition: The node to which p points is deleted
 	//               from the red-black tree.
-	void value_of_parrent(nodeType<elemType>& node);
+	void value_of_parrent(const elemType& searchItem);
 	void value_of_grand_parrent(nodeType<elemType>& node);
 	void value_of_uncle(nodeType<elemType>& node);
 		/*
@@ -236,10 +236,35 @@ void rBlackTreeType<elemType>::deleteFromTree
 } //end deleteFromTree
 
 template <class elemType>
-void rBlackTreeType<elemType>::value_of_parrent
-(nodeType<elemType>& node)
+void rBlackTreeType<elemType>::value_of_parrent(const elemType& searchItem)
 {
+	bool found = false;
+	nodeType<elemType> *current;
+	if (root == NULL)
+		cout << "Cannot search an empty tree." << endl;
+	else
+	{
+		current = root;
+		
 
+		//add search
+		while (current != NULL && !found)
+		{
+			if (current->info == searchItem)
+				found = true;
+			else if (current->info > searchItem)
+				current = current->lLink;
+			else
+				current = current->rLink;
+		}//end while
+
+
+		//end of search
+
+		cout << current->plink;
+	}
+
+	//cout << "Value of parrent" << endl;
 }
 
 template <class elemType>
@@ -255,4 +280,13 @@ void rBlackTreeType<elemType>::value_of_uncle
 {
 
 }
+
+template <class elemType>
+void rBlackTreeType<elemType>::interactive_Debug()
+{
+
+	cout << "Welcome to the interactive Debugging tool created by Michael Mettler" <<endl;
+	cout << "Parrent value "; value_of_parrent(42);
+}
+
 #endif

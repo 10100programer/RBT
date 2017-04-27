@@ -49,7 +49,15 @@ void mainmenu()
 void RBT()
 {
 	rBlackTreeType <int> tree;
-	//
+	int cts=0;
+	while (cts < 9)
+	{
+		tree.insert(val1[cts]);
+		cts++;
+	}
+	cout << "30, 35, 13, 22, 42, 28, 23, 16, 25" << std::endl;
+	cout << "Data inserted into trees\n";
+	tree.interactive_Debug();
 	pause();
 }
 void BST() 
