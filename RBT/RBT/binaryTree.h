@@ -13,8 +13,8 @@ struct nodeType
     elemType info;
     nodeType<elemType>	*lLink;
     nodeType<elemType>	*rLink;
-	nodeType<elemType>	*pLink;//parrent link
-	nodeType<bool>		*color;
+	nodeType<elemType>	*plink;//parrent link
+	bool		color;
 };
 	//0x524e	
     //Definition of the class

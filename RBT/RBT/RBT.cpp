@@ -49,7 +49,8 @@ void mainmenu()
 void RBT()
 {
 	rBlackTreeType <int> tree;
-
+	//
+	pause();
 }
 void BST() 
 {
