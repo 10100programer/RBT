@@ -34,10 +34,20 @@ public:
 
 private:
 	void deleteFromTree(nodeType<elemType>* &p);
+	
+
 	//Function to delete the node to which p points is 
 	//deleted from the red-black tree.
 	//Postcondition: The node to which p points is deleted
 	//               from the red-black tree.
+	void value_of_parrent(nodeType<elemType>& node);
+	void value_of_grand_parrent(nodeType<elemType>& node);
+	void value_of_uncle(nodeType<elemType>& node);
+		/*
+		
+		
+		
+		*/
 };
 
 
@@ -225,4 +235,24 @@ void rBlackTreeType<elemType>::deleteFromTree
 	}//end else
 } //end deleteFromTree
 
+template <class elemType>
+void rBlackTreeType<elemType>::value_of_parrent
+(nodeType<elemType>& node)
+{
+
+}
+
+template <class elemType>
+void rBlackTreeType<elemType>::value_of_grand_parrent
+(nodeType<elemType>& node)
+{
+
+}
+
+template <class elemType>
+void rBlackTreeType<elemType>::value_of_uncle
+(nodeType<elemType>& node)
+{
+
+}
 #endif
